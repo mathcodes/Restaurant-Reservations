@@ -61,10 +61,10 @@
         $("#reserve-btn").on("click", function (event) {
             event.preventDefault();
             let newReserve = {
-                name: $("#name").val().trim(),
-                phone: $("#phone").val().trim(),
-                email: $("#email").val().trim(),
-                id: $("#unique-id").val().trim()
+                customerName: $("#name").val().trim(),
+                phoneNumber: $("#phone").val().trim(),
+                customerEmail: $("#email").val().trim(),
+                customerID: $("#unique-id").val().trim()
             }
 
             $.post("/api/tables/", newReserve)
