@@ -41,6 +41,7 @@ module.exports = function(app) {
         tableData.push(newReservation);
         }
         console.log(newReservation);
+        res.json(newReservation);
     });
 
     app.post("/api/tables", function(req, res) {
