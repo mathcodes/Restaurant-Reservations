@@ -67,19 +67,11 @@
                 id: $("#unique-id").val().trim()
             }
 
-            if (newReserve < 5){
             $.post("/api/tables/", newReserve)
                 .then(function (data) {
                     console.log("reserve.html", data);
                     alert("Yay! You are offically booked!");
                 });
-            } else {
-                $.post("/api/waitlist/", newReserve)
-                    .then(function (data) {
-                        console.log("reserve.html", data);
-                        alert("Yay! You are officially booked!")
-                    });
-            }
         });
 
 
