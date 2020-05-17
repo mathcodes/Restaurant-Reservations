@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8000;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("public")); //public folder to hold all html and css
 
 require("./apiRoutes.js")(app);
 require("./htmlRoutes.js")(app);
@@ -20,4 +20,4 @@ require("./htmlRoutes.js")(app);
 // =============================================================
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
-  });
+});

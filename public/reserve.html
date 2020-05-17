@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Reservation</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
@@ -16,9 +15,9 @@
         <div class="jumbotron text-center">
             <h3 class="center-align">Make your Reservation</h3>
             <br>
-            <a href="/tables"><button class="btn btn-primary btn-lg"><span class="far fa-list-alt"></span> View
+            <a href="./tables.html"><button class="btn btn-primary btn-lg"><span class="far fa-list-alt"></span> View
                     Tables</button></a>
-            <a href="/home"><button class="btn btn-secondary btn-light btn-lg"><span class="fas fa-home"></span></button></a>
+            <a href="./home.html"><button class="btn btn-secondary btn-light btn-lg"><span class="fas fa-home"></span></button></a>
         </div>
         <div class="row">
 
@@ -50,15 +49,15 @@
             <br>
             <div class="row">
                 <div class="col-12">
-                    <a href="/api/tables/"><span>API Table Link |</span></a>
-                    <a href="/api/waitlist/"><span>API Wait List</span></a></div>
+                    <a href="./api/tables"><span>API Table Link |</span></a>
+                    <a href="./api/waitlist"><span>API Wait List</span></a></div>
             </div>
         </div>
     </div>
 
 
     <script type="text/javascript">
-        $("#reserve-btn").on("click", function (event) {
+        $("#reserve-btn").on("click", function(event) {
             event.preventDefault();
             let newReserve = {
                 customerName: $("#name").val().trim(),
@@ -67,14 +66,12 @@
                 customerID: $("#unique-id").val().trim()
             }
 
-            $.post("/api/tables/", newReserve)
-                .then(function (data) {
-                    console.log("reserve.html", data);
+            $.post("./api/tables,html", newReserve)
+                .then(function(data) {
+                    console.log("./reserve.html", data);
                     alert("Yay! You are offically booked!");
                 });
         });
-
-
     </script>
 </body>
 
