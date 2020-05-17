@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(49, 138, 141, 0.5);
+    color: rgb(49, 138, 141);
+}
+
+.fa-anchor {
+    color: rgb(172, 21, 21);
+}
+
+.fa {
+    color: rgb(172, 21, 21);
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#jumbo {
+    padding: 2%;
+    background-color: aliceblue;
+}
+
+#resBtn {
+    background-color: rgb(172, 21, 21);
+    border-style: dashed;
+    border-width: 5px;
+    border-color: rgb(231, 192, 94)
+}
+
+p {
+    text-align: center;
+}
+
+#vwTblsBtn {
+    float: right;
+    padding: .5%;
+    background-color: rgb(231, 192, 94);
+    border-style: dashed;
+    border-color: rgb(231, 192, 94);
+}
+
+#tblLink {
+    color: aliceblue;
+}
+
+#waitList {
+    color: aliceblue;
+}
