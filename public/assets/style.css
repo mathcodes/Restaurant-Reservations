@@ -3,17 +3,8 @@ body {
     color: rgb(49, 138, 141);
 }
 
-.fa-anchor {
-    color: rgb(172, 21, 21);
-}
-
 .fa {
     color: rgb(172, 21, 21);
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
 }
 
 #jumbo {
