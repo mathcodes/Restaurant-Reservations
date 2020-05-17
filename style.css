@@ -8,6 +8,7 @@ body {
 }
 
 .fa {
+    color: rgb(172, 21, 21);
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
