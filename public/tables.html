@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
 
     <!-- Latest compiled and minified CSS & JS -->
@@ -26,7 +27,8 @@
             <br>
 
             <div class="text-center">
-                <a href="./reserve.html"><button class="btn btn-lg btn-danger" id="resBtn"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
+                <a href="./reserve.html"><button class="btn btn-lg btn-danger" id="resBtn"><span
+                            class="fa fa-credit-card"></span> Make Reservation</button></a>
                 <a href="./home.html"><button class="btn btn-light btn-lg"><span class="fa fa-home"></span></button></a>
 
             </div>
@@ -61,8 +63,9 @@
         <footer class="footer mt-4">
             <div class="container">
                 <p>Control Panel</p>
-                <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API
-            Wait List</a>
+                <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a
+                        href="/api/waitlist">API
+                        Wait List</a>
             </div>
         </footer>
 
@@ -80,10 +83,10 @@
     function runTableQuery() {
         // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
         $.ajax({
-                url: "/api/tables",
-                method: "GET"
-            })
-            .then(function(tableData) {
+            url: "/api/tables",
+            method: "GET"
+        })
+            .then(function (tableData) {
 
                 // Here we then log the tableData to console, where it will show up as an object.
                 console.log(tableData);
@@ -116,10 +119,10 @@
 
         // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
         $.ajax({
-                url: "/api/waitlist",
-                method: "GET"
-            })
-            .then(function(waitData) {
+            url: "/api/waitlist",
+            method: "GET"
+        })
+            .then(function (waitData) {
 
                 // Here we then log the waitlistData to console, where it will show up as an object.
                 console.log(waitData);
@@ -156,7 +159,7 @@
         $.ajax({
             url: "/api/clear",
             method: "POST"
-        }).then(function() {
+        }).then(function () {
             $("#waitList").empty();
             $("#tableList").empty();
         });
