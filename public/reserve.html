@@ -46,7 +46,7 @@
                         <label for="unique-id"><b>Unique ID</b></label>
                         <input type="text" class="form-control" id="unique-id" placeholder="">
                     </div>
-                    <button type="submit" onclick="myFunction()" id="reserve-btn" class="btn btn-primary" value="reset form">Submit</button>
+                    <button type="submit" id="reserve-btn" class="btn btn-primary" value="reset form">Submit</button>
                 </form>
 
             </div>
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-
+    <!-- // took away one of the click events, never have two per click -->
     <script type="text/javascript">
         $("#reserve-btn").on("click", function(event) {
             event.preventDefault();
@@ -70,17 +70,13 @@
                 customerEmail: $("#email").val().trim(),
                 customerID: $("#unique-id").val().trim()
             }
-
+            console.log(newReserve);
+            document.getElementById("myForm").reset();
             $.post("./api/tables", newReserve)
                 .then(function(data) {
-                    console.log("./public/reserve.html", data);
                     alert("Yay! You are offically booked!");
                 });
         });
-
-        function myFunction() {
-            document.getElementById("myForm").reset();
-        }
     </script>
 </body>
 

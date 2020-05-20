@@ -5,12 +5,7 @@
 // But you could have it be an empty array as well.
 // ===============================================================================
 
-var waitingArray = [{
-    customerName: " ",
-    customerEmail: " ",
-    phoneNumber: " ",
-    customerID: " "
-}];
+var waitingArray = [];
 
 
 // Note how we export the array. This makes it accessible to other files using require.
