@@ -38,3 +38,7 @@ p {
 #waitList {
     color: aliceblue;
 }
+
+.btn-light {
+    color: rgb(49, 138, 141);
+}
