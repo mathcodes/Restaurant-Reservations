@@ -27,8 +27,8 @@
 
             <div class="text-center">
                 <a href="./reserve.html"><button class="btn btn-lg btn-danger" id="resBtn"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
-                <a href="./"><button class="btn btn-secondary btn-light btn-lg"><span class="fa fa-home"></span></button></a>
-                <!-- <a href="./home.html"><button class="btn btn-secondary btn-light btn-lg"><span class="fas fa-home"></span></button></a> -->
+                <a href="./home.html"><button class="btn btn-light btn-lg"><span class="fa fa-home"></span></button></a>
+
             </div>
         </div>
 
@@ -99,12 +99,12 @@
                     var listItem = $("<li class='list-group-item mt-4'>");
 
                     listItem.append(
-                        $("<h2>").text("Table #" + (i + 1)),
+                        $("<h4>").text("Table #" + (i + 1)),
                         $("<hr>"),
-                        $("<h2>").text("ID: " + tableData[i].customerID),
-                        $("<h2>").text("Name: " + tableData[i].customerName),
-                        $("<h2>").text("Email: " + tableData[i].customerEmail),
-                        $("<h2>").text("Phone: " + tableData[i].phoneNumber)
+                        $("<h4>").text("ID: " + tableData[i].customerID),
+                        $("<h4>").text("Name: " + tableData[i].customerName),
+                        $("<h4>").text("Email: " + tableData[i].customerEmail),
+                        $("<h4>").text("Phone: " + tableData[i].phoneNumber)
                     );
 
                     tableList.append(listItem);
@@ -135,12 +135,12 @@
                     var listItem = $("<li class='list-group-item mt-4'>");
 
                     listItem.append(
-                        $("<h2>").text("Table #" + (i + 1)),
+                        $("<h4>").text("Table #" + (i + 1)),
                         $("<hr>"),
-                        $("<h2>").text("ID: " + waitData[i].customerID),
-                        $("<h2>").text("Name: " + waitData[i].customerName),
-                        $("<h2>").text("Email: " + waitData[i].customerEmail),
-                        $("<h2>").text("Phone: " + waitData[i].phoneNumber)
+                        $("<h4>").text("ID: " + waitData[i].customerID),
+                        $("<h4>").text("Name: " + waitData[i].customerName),
+                        $("<h4>").text("Email: " + waitData[i].customerEmail),
+                        $("<h4>").text("Phone: " + waitData[i].phoneNumber)
                     );
 
                     waitList.append(listItem);

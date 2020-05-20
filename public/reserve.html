@@ -19,15 +19,14 @@
             <hr>
             <h2 class="center-align">Make your Reservation</h2>
             <br>
-            <a href="./tables.html"><button class="btn btn-primary btn-lg" id="vwTblsBtn"><span class="far fa-list-alt"></span> View
-                    Tables</button></a>
-            <a href="./home.html"><button class="btn btn-secondary btn-light btn-lg"><span class="fas fa-home"></span></button></a>
         </div>
         <div class="row">
 
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12">Table Reservation</div>
+                    <div class="col-12">
+                        <h3>Table Reservation</h3>
+                    </div>
                 </div>
                 <form id="myForm">
                     <div class="form-group">
@@ -46,7 +45,15 @@
                         <label for="unique-id"><b>Unique ID</b></label>
                         <input type="text" class="form-control" id="unique-id" placeholder="">
                     </div>
-                    <button type="submit" id="reserve-btn" class="btn btn-primary" value="reset form">Submit</button>
+                    <div class="row">
+                        <div class="col-3">
+                            <button type="submit" id="reserve-btn" class="btn btn-primary" value="reset form">Submit</button>
+                        </div>
+                        <div class="col-6"></div>
+                        <div class="col-3">
+                            <a href="/tables.html"><button class="btn btn-primary btn-lg" id="vwTblsBtn"> <span class="far fa-list-alt"></span> View Tables</button></a>
+                        </div>
+                    </div>
                 </form>
 
             </div>
