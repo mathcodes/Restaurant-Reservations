@@ -8,34 +8,37 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/assets/style.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+
 </head>
 
 <body>
 
     <div class="container">
 
-        <div class="jumbotron">
-            <h1 class="text-center"><span class="fa fa-anchor"></span> Seafood Restaurant</h1>
+        <div class="jumbotron" id="jumbo">
+            <h1 class="text-center"><span class="fa fa-anchor" id="anchor"></span> Seafood Restaurant</h1>
             <hr>
-            <h2 class="text-center">We only have 5 tables! Book your seat before they all are gone!</h2>
+            <h2 class="text-center" id="tablesLeft">We only have 5 tables!</h2>
+            <p>Book your seat before they all are gone!</p>
             <br>
 
             <div class="text-center">
-                <a href="/tables"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> View Tables</button></a>
-                <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
+                <a href="/reserve"><button class="btn btn-lg btn-danger" id="resBtn"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
             </div>
-
         </div>
+
+        <a href="/tables"><button class="btn btn-lg btn-primary" id="vwTblsBtn"><span class="fa fa-list-alt"></span> View Tables</button></a>
+
 
         <footer class="footer">
             <div class="container">
-                <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a>
+                <p><a id="tblLink" href="/api/tables">API Table Link</a> | <a id="waitList" href="/api/waitlist">API Wait List</a>
             </div>
         </footer>
 
     </div>
-
 
 </body>
 

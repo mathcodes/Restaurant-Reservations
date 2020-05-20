@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-12">Table Reservation</div>
                 </div>
-                <form>
+                <form id="myForm">
                     <div class="form-group">
                         <label for="name"><b>Name</b></label>
                         <input type="text" class="form-control" id="name" placeholder="">
@@ -42,8 +42,9 @@
                         <label for="unique-id"><b>Unique ID</b></label>
                         <input type="text" class="form-control" id="unique-id" placeholder="">
                     </div>
-                    <button type="submit" id="reserve-btn" class="btn btn-primary">Submit</button>
+                    <button type="submit" onclick="myFunction()" id="reserve-btn" class="btn btn-primary" value="reset form">Submit</button>
                 </form>
+
             </div>
             <br>
             <br>
@@ -72,6 +73,10 @@
                     alert("Yay! You are offically booked!");
                 });
         });
+
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
     </script>
 </body>
 
